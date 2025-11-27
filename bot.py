@@ -45,7 +45,7 @@ async def check_all_prices():
                         f"Prix actuel ≈ ${prix:,.2f}"
                     )
                     derniers_paliers[crypto] = palier_actuel
-                    print(f"{sym} → ${palier_actuel:,}")
+                    print(f"{@everyone}{sym} → ${palier_actuel:,}")
 
     except Exception as e:
         print("Erreur lors de la récupération des prix :", e)
